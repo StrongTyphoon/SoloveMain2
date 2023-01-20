@@ -1,0 +1,305 @@
+/* Customize your main colors in :root variables */
+/*--card-background-color: #946cee; */
+@font-face {
+  font-family: "GowunBatang";
+  src: url("./fonts/GowunBatang-Bold.ttf");
+}
+
+@font-face{
+  font-family: "PoppinsLight";
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+@font-face{
+  font-family: "PoppinsSemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+:root {
+  --main-background-color: #584486;
+  --card-background-lighter-color: #7A7F92;
+  --main-text-color:#F7F6F4;
+  --title-text-color:#F7F6F4;
+}
+
+body{
+  background-color: #584486;
+  background-size: 100% 100%;
+  font-family:'PoppinsLight';
+  font-size: 1.2em;
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select:none; 
+  user-select:none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display:none;
+}
+
+.active p{
+  color:rgb(120, 239, 199);
+}
+
+.bigWrap{
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(C:\Users\SAMSUNG\Desktop\SoloveProject\solove\src\wall45.png); */
+  background-size: cover;
+}
+
+h2, p{
+  color: var(--main-text-color);
+
+}
+
+.btnBox{
+  position: relative;
+  margin: 10px;
+}
+
+.btnStyle{
+  margin: 10px;
+  width : 40px;
+  height: 40px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+  
+#header{
+  position: fixed;
+  left:10%;
+  top: 25px;
+  width:80%;
+  height:50px;
+  border-radius: 30px;
+  background-color: black;
+  border: 2px solid mediumaquamarine;
+  z-index:5;
+}
+
+
+.navbar_icons a {
+  color: white;
+}
+
+.navbar {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbarLogo{
+  margin-left:100px;
+  margin-top:10px;
+}
+
+.navbarMenu{
+  display: flex;
+  border:black;
+  margin-right: 70px;
+  font-size: 21px;
+}
+
+.textContainer{
+  width:40%;
+  margin:60px 10px; 
+}
+
+.textContainer h1{
+  background: linear-gradient(to right,white 0%,#B2FAFF 38% ,#AA43FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  line-height:0.7em;
+  font-family: 'PoppinsSemiBold';
+}
+
+
+.textContainer p{
+  margin-top:80px;
+  font-size: 20px;
+}
+
+.SoloveMintinfo{
+  font-size: 32px;
+}
+
+.btn_info{
+  padding-top: 10px;
+  position: relative; 
+}
+
+.parentDiv{
+  position:relative; 
+  overflow: hidden;
+}
+
+.parentDiv:hover .tableImage{
+  opacity: 0;
+  transform: translate(100%,100%);
+  transition-delay: 0.25s;
+}
+
+.tableImage{
+  position:relative; 
+  width: 100%;
+  height: 100%;
+  transition-duration: 2.3s;
+}
+
+.tableHoverImage{
+  position: relative;
+  right : 250px;
+  top: -250px;
+  opacity: 0;
+  transition-duration: 1.8s;
+}
+
+.parentDiv:hover .tableHoverImage{
+  opacity: 1;
+  transform: translate(250px,250px);
+  transition-delay: 0.25s;
+}
+
+.SoloveMintinfo1{
+  display: flex;
+  -webkit-box-pack: justify;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+.SoloveMintinfo1 .unit{
+  margin-right: 180px;
+}
+
+.SoloveMintinfo2{
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.SoloveMintinfo2 .num{
+  margin-left: 220px;
+}
+
+.bar{
+  height: 0.5px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.label{
+  font-size: 20px; 
+}
+
+.unit{
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 5px;
+    line-height: 50px;
+}
+.num{
+  position: relative;
+  bottom: 15px;
+  font-size: 60px;
+}
+.select{
+  border-color: rgb(255, 255, 255);
+    background: white;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 16px;
+    color: black;
+    padding-right: 14px;
+    padding-left: 14px;
+    appearance: none;
+}
+
+@keyframes message{
+  from, to, 65% {transform: translate(-50%, 0)}
+  25% {transform: translate(-50%, 60px)}
+  26% {transform: translate(-50%, -60px)}
+
+}
+
+.Scrolldown {
+  height: 17px;
+  margin: auto;
+  position: relative;
+  overflow:hidden;
+  cursor: pointer;
+  width: 320px;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  top : 150px;
+}
+
+.Scrolldowntext {
+  margin: 12px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  animation: message 2s cubic-bezier(0.645,.045,.355,1) infinite;
+  color : black;
+}
+
+
+
+
+.Roadmapwall {
+  width:'100%';
+  height:'100%';
+  background-image: url(./img/roadmapwall.png);
+  background-size : contain;
+  background-color: black;
+  position:'relative';
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.Circle {
+  width: 100vw;
+  height: 203vh;
+  border: 15px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  top : 165px;
+  right : 10px;
+}
+
+
+.sloguncontainer {
+  margin-top: 10vh;
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  will-change: transform;
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+.scrolling-text-content {
+  font-size: 120px;
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1em;
+  margin: 50px 0;
+  text-decoration-color: linear-gradient(right, white, purple);
+}
